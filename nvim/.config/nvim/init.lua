@@ -25,4 +25,6 @@ require("lazy").setup({
 	require("plugins.alpha"),
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
+	require("plugins.debug"),
+	require("plugins.vim-tmux-navigator"),
 })
