@@ -131,8 +131,22 @@ return {
 		-- - settings (table): Override the default settings passed when initializing the server.
 		local servers = {
 			ruff = {},
-			basedpyright = {},
-			jsonls = {},
+            basedpyright = {
+              settings = {
+                basedpyright = {
+                  analysis = {
+                    useLibraryCodeForTypes = true,
+                    typeCheckingMode = 'basic',
+                    diagnosticMode = 'workspace',
+                    autoSearchPath = true,
+                    inlayHints = {
+                      callArgumentNames = true,
+                    },
+                 },
+                },
+              },
+            },
+            jsonls = {},
 			yamlls = {},
 			lua_ls = {
 				settings = {
