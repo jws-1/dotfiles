@@ -82,5 +82,5 @@ config.hyperlink_rules = {
 }
 
 config.color_scheme = "Nord (Gogh)"
-
+config.enable_wayland = false 
 return config

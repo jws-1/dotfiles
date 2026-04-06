@@ -3,7 +3,7 @@ return { -- Highlight, edit, and navigate code
 	build = ":TSUpdate",
 	branch = "master",
 	lazy = false,
-	main = "nvim-treesitter.configs", -- Sets main module to use for opts
+	main = "nvim-treesitter.config", -- Sets main module to use for opts
 	-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 	opts = {
 		ensure_installed = { "lua", "python", "bash", "yaml", "json", "markdown" },
