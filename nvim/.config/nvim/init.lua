@@ -358,6 +358,7 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.pack.add({
 	"https://www.github.com/nvim-tree/nvim-tree.lua",
 	"https://www.github.com/ibhagwan/fzf-lua",
+	"https://www.github.com/nvim-tree/nvim-web-devicons",
 	"https://www.github.com/echasnovski/mini.nvim",
 	"https://www.github.com/lewis6991/gitsigns.nvim",
 	{
@@ -382,6 +383,7 @@ end
 
 packadd("nvim-tree.lua")
 packadd("fzf-lua")
+packadd("nvim-web-devicons")
 packadd("mini.nvim")
 packadd("gitsigns.nvim")
 packadd("nvim-treesitter")
@@ -395,6 +397,7 @@ packadd("blink.cmp")
 -- PLUGIN CONFIGS
 -- ============================================================================
 
+-- TODO: Allow nvim-tree to open same file in a split.
 require("nvim-tree").setup({
 	view = {
 		width = 35,
