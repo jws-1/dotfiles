@@ -1,0 +1,26 @@
+return {}
+-- return {
+--     "stevearc/conform.nvim",
+--     event = { "BufReadPre", "BufNewFile" },
+--     config = function()
+--         local conform = require("conform")
+--
+--         conform.setup({
+--             formatters_by_ft = {
+--                 lua = { "stylua" },
+--                 -- isort sorts your imports, black formats the code
+--                 python = { "black" },
+--             },
+--             -- We leave format_on_save out entirely, so it requires manual triggering
+--         })
+--
+--         -- Your requested manual keybind for formatting
+--         vim.keymap.set({ "n", "v" }, "<leader>F", function()
+--             conform.format({
+--                 lsp_fallback = true,
+--                 async = false,
+--                 timeout_ms = 500,
+--             })
+--         end, { desc = "Format file or range" })
+--     end,
+-- }

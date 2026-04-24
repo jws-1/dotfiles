@@ -106,3 +106,10 @@ vim.opt.diffopt:append("linematch:60") -- improve diff display
 vim.opt.redrawtime = 10000 -- increase neovim redraw tolerance
 vim.opt.maxmempattern = 20000 -- increase max memory
 
+vim.diagnostic.config({
+    virtual_text = true, -- Shows the error message next to the code
+    signs = true,        -- Shows icons in the gutter
+    underline = true,    -- This is what you asked for!
+    update_in_insert = false,
+    severity_sort = true,
+})
